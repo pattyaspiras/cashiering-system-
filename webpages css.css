@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  /* Navigation bar styling */
+  .navbar {
+    background-color: #ffcc0087;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .menu-btn{
+    padding: 5px;
+    transform: rotate(90deg);
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.522);
+    border: 0;
+  }
+  
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.89);
+    padding: 20px;
+  }
+  section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0a0000;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.menuproduct{
+  padding-right: 300px;
+  padding-left: 200px;
+  transition: 0.2s ease;
+}
+.product img:hover{
+  transform: scale(1.20);
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-image: url('dm.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 248, 248, 0.171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .overlay .cont h1{
+  font-size: 80px;
+  color: rgba(0, 0, 0, 0.96);
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+}
+
+.main .overlay .cont h2{
+  font-size: 70px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+}
+
+.info{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 80px;
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info p {
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
+
+.left img, .right div {
+  margin-bottom: 20px;
+}
+
+.right img {
+  margin-right: 20px;
+}
+  
+  
+  .third{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .third .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 0, 0, 0.574);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .third .overlay .cont{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .third .overlay .cont h2{
+      font-size: 80px;
+      font-family: 'Bitter', serif;
+      font-style: italic;
+      color: #f6efef;
+      width: 60%;
+      text-align: center;
+  }
+  .menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 80px;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  .menu .left img{
+    width: 280px;
+    height: 220px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    width: 100%;
+    max-width: 800px;
+  }
+  .menu .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    .right{
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  img {
+    margin: 10px;
+    border: 2px solid #555;
+  }
+  
+  .productname{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+
+    .contact {
+      background-color: #f4f4f4;
+      padding: 30px 50px;
+      text-align: center;
+    }
+    
+    .contact h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .contact-form {
+      display: inline-block;
+      text-align: left;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .contact-form textarea {
+      height: 150px;
+    }
+    
+    .contact-form input[type="submit"] {
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .contact-form input[type="submit"]:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    
+    .cn {
+      display: inline-block;
+      background-color: #ff6961;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    
+    .cn a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .cn:hover {
+      background-color: #000;
+    }
+    
+    .contact p {
+      margin-top: 20px;
+    }
+    
+    .contact img {
+      vertical-align: middle;
+    }
+    
+    
+    
+    
+    @keyframes steam {
+      0% {
+        transform: rotate(-5deg) translateY(0);
+        opacity: 0;
+      }
+      25% {
+        transform: rotate(5deg) translateY(-40px);
+        opacity: 1;
+      }
+      75% {
+        transform: rotate(-5deg) translateY(-80px);
+        opacity: 1;
+      }
+      100% {
+        transform: rotate(5deg) translateY(-120px);
+        opacity: 0;
+      }
+    }
